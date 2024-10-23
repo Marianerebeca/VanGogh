@@ -428,6 +428,15 @@ footer .container {
     }
 }
 
+.nav-list li a {
+    display: block;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    width: 100%; /* Garante que o link cobre toda a largura do item */
+}
+
+
 /* Estilo para dispositivos pequenos (até 576px) */
 @media screen and (max-width: 576px) {
     .nav-list {

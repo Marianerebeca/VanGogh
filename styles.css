@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: "Forum", sans-serif; 
+    font-family: "Forum", sans-serif;
     color: var(--primary);
     background-color: var(--white);
 }
@@ -65,11 +65,16 @@ nav {
 }
 
 .logo {
-    width: 100px; /* Reduz o tamanho da logo */
-    height: 100px; /* Mantém a altura proporcional */
-    border-radius: 50%; /* Torna a logo circular */
-    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorções */
-    margin-top: -10px; /* Ajuste para centralizar melhor o logo */
+    width: 100px;
+    /* Reduz o tamanho da logo */
+    height: 100px;
+    /* Mantém a altura proporcional */
+    border-radius: 50%;
+    /* Torna a logo circular */
+    object-fit: cover;
+    /* Garante que a imagem preencha o círculo sem distorções */
+    margin-top: -10px;
+    /* Ajuste para centralizar melhor o logo */
 }
 
 .main-content {
@@ -89,7 +94,7 @@ nav {
 .main-content .main-heading {
     text-align: center;
     font-size: 100px;
-    
+
 }
 
 .main-content p {
@@ -129,7 +134,7 @@ nav {
 
 .service {
     width: 350px;
-    
+
 }
 
 .service p {
@@ -172,10 +177,13 @@ nav {
 }
 
 #testimonial .profile img {
-    width: 60px; /* Tamanho menor para a imagem de perfil */
+    width: 60px;
+    /* Tamanho menor para a imagem de perfil */
     height: auto;
-    border-radius: 50%; /* Mantém o formato circular */
-    object-fit: cover; /* Garante que a imagem se ajuste corretamente */
+    border-radius: 50%;
+    /* Mantém o formato circular */
+    object-fit: cover;
+    /* Garante que a imagem se ajuste corretamente */
 }
 
 #about-us .container {
@@ -202,11 +210,16 @@ nav {
 }
 
 #about-us img {
-    max-width: 300px; /* Limita a largura da imagem no "About Us" */
-    width: 100%; /* Mantém responsivo */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Mantém as bordas arredondadas */
-    object-fit: cover; /* Garante que a imagem se ajuste corretamente */
+    max-width: 300px;
+    /* Limita a largura da imagem no "About Us" */
+    width: 100%;
+    /* Mantém responsivo */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 10px;
+    /* Mantém as bordas arredondadas */
+    object-fit: cover;
+    /* Garante que a imagem se ajuste corretamente */
 }
 
 
@@ -247,18 +260,23 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 120px;
-    
+
 }
 
 
-#questions img{
+#questions img {
     text-align: center;
     display: block;
-    max-width: 320px; /* Limita a largura da imagem no "About Us" */
-    width: 100%; /* Mantém responsivo */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Mantém as bordas arredondadas */
-    object-fit: cover; /* Garante que a imagem se ajuste corretamente */
+    max-width: 320px;
+    /* Limita a largura da imagem no "About Us" */
+    width: 100%;
+    /* Mantém responsivo */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 10px;
+    /* Mantém as bordas arredondadas */
+    object-fit: cover;
+    /* Garante que a imagem se ajuste corretamente */
 }
 
 #questions h1 {
@@ -290,7 +308,7 @@ footer .container {
 }
 
 
-.footerLogo{
+.footerLogo {
     margin-top: 0;
     width: 100px;
     height: 100px;
@@ -330,9 +348,43 @@ footer .container {
     object-fit: cover;
 }
 
+/*=============== BREAKPOINTS ===============*/
 
+/* Estilo para dispositivos grandes (até 1200px) */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1100px;
+        padding: 20px;
+    }
+
+    .nav-list {
+        width: 70%;
+        /* Ajuste da largura do menu */
+    }
+}
+
+/* Estilo para dispositivos médios (até 992px) */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 900px;
+        padding: 20px;
+    }
+
+    .nav-list {
+        width: 70%;
+        /* Ajuste da largura do menu */
+    }
+
+    #about-us .container,
+    #questions .container,
+    #rodape .container,
+    footer .container {
+        gap: 24px;
+    }
+}
+
+/* Estilo para dispositivos médios e menores (até 768px) */
 @media screen and (max-width: 768px) {
-    
     .menu-btn {
         display: block;
         cursor: pointer;
@@ -347,10 +399,12 @@ footer .container {
         width: 80%;
         height: 100vh;
         padding-top: 80px;
-        transform: translateX(100%); /* Move o menu para fora da tela */
+        transform: translateX(100%);
+        /* Move o menu para fora da tela */
         transition: transform 0.3s ease;
         z-index: 10;
-        overflow-y: auto; /* Permite rolar o menu se necessário */
+        overflow-y: auto;
+        /* Permite rolar o menu se necessário */
     }
 
     .nav-list.active {
@@ -365,27 +419,53 @@ footer .container {
         border-bottom: 1px solid var(--white);
     }
 
-    #about-us .container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    #questions .container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    #rodape .container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
+    #about-us .container,
+    #questions .container,
+    #rodape .container,
     footer .container {
         flex-direction: column;
-        gap: 16px;
+        gap: 30px;
     }
 }
 
+/* Estilo para dispositivos pequenos (até 576px) */
+@media screen and (max-width: 576px) {
+    .nav-list {
+        width: 90%;
+        /* Aumenta a largura do menu para telas menores */
+    }
 
+    .nav-list li:not(:last-child) {
+        padding: 10px 20px;
+        /* Ajusta o padding */
+    }
 
+    .container {
+        padding: 10px;
+    }
+}
 
+/* Estilo para dispositivos muito pequenos (até 450px) */
+@media screen and (max-width: 450px) {
+    .nav-list {
+        width: 100%;
+        /* Ocupa a largura total */
+    }
+
+    .nav-list li:not(:last-child) {
+        padding: 10px 15px;
+        /* Ajuste para telas muito pequenas */
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    #about-us .container,
+    #questions .container,
+    #rodape .container,
+    footer .container {
+        gap: 20px;
+        /* Reduz a distância para evitar quebra de layout */
+    }
+}

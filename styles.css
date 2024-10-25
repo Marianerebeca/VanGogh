@@ -202,7 +202,9 @@ nav {
 }
 
 #about-us .about-content p {
+    text-align: justify;
     font-size: 22px;
+    padding: 15px;
 }
 
 #about-us h1 {
@@ -221,6 +223,7 @@ nav {
     object-fit: cover;
     /* Garante que a imagem se ajuste corretamente */
 }
+
 
 
 #questions {
@@ -291,11 +294,53 @@ nav {
     align-items: center;
 }
 
+#turma {
+    margin-top: 20px;
+}
+
+#turma .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+#turma .turma-content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+#turma .turma-content p {
+    font-size: 22px;
+    text-align: justify;
+    padding: 15px;
+}
+
+#turma h1 {
+    font-size: 50px;
+}
+
+#turma img {
+    margin-left: -12px;
+    max-width: 360px;
+    /* Limita a largura da imagem no "About Us" */
+    width: 100%;
+    /* Mantém responsivo */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 10px;
+    /* Mantém as bordas arredondadas */
+    object-fit: cover;
+    /* Garante que a imagem se ajuste corretamente */
+}
 
 footer {
     margin-top: -60px;
-    background-color: var(--white);
-    color: var(--primary);
+    background: var(--light-gray);
+    
 }
 
 footer .container {
@@ -332,7 +377,8 @@ footer .container {
 }
 
 .rodape {
-    background-color: var(--body-color);
+    margin-top: 30px;
+    background-color: var(--light-gray);
     padding-block: 3rem;
 }
 
@@ -342,11 +388,13 @@ footer .container {
 }
 
 .rodape__logo {
+    margin-top: -60px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
 }
+
 
 /*=============== BREAKPOINTS ===============*/
 
@@ -376,6 +424,7 @@ footer .container {
     }
 
     #about-us .container,
+    #turma .container,
     #questions .container,
     #rodape .container,
     footer .container {
@@ -420,6 +469,7 @@ footer .container {
     }
 
     #about-us .container,
+    #turma .container,
     #questions .container,
     #rodape .container,
     footer .container {
@@ -471,6 +521,7 @@ footer .container {
     }
 
     #about-us .container,
+    #turma .container,
     #questions .container,
     #rodape .container,
     footer .container {

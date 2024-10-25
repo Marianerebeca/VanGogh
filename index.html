@@ -123,6 +123,7 @@
                 <h1>Biography</h1>
                 <i class="fa-solid fa-quote-left"></i>
                 <h3>Eu estou sempre fazendo aquilo que não sou capaz, numa tentativa de aprender como fazê-lo.</h3>
+                <div class="container-grid">
                 <p>Vincent van Gogh (1853-1890) foi um pintor pós-impressionista holandês, conhecido por suas obras
                     expressivas e uso vibrante de cores. Nascido em Zundert, na Holanda, ele teve uma vida marcada por
                     dificuldades emocionais e financeiras. Van Gogh só começou a pintar em 1880, aos 27 anos, depois de
@@ -142,6 +143,7 @@
                     reconhecimento póstumo e hoje é considerado um dos artistas mais influentes e renomados da história
                     da arte ocidental, inspirando gerações de artistas e admiradores ao redor do mundo.</p>
 
+            </div>
             </div>
 
             <div class="about-image">
@@ -265,6 +267,26 @@
                     </div>
     </section>
 
+    <section id="turma">
+        <div class="container">
+            <div class="turma-content">
+                <h1>Agradecimento</h1>
+                <p>Vincent van Gogh (1853-1890) foi um pintor pós-impressionista holandês, conhecido por suas obras
+                    expressivas e uso vibrante de cores. Nascido em Zundert, na Holanda, ele teve uma vida marcada por
+                    dificuldades emocionais e financeiras. Van Gogh só começou a pintar em 1880, aos 27 anos, depois de
+                    tentar carreiras como professor e missionário.
+                    Durante sua curta vida artística, ele produziu mais de 2.100 obras, incluindo cerca de 860 pinturas
+                    a
+                    óleo, como Os Comedores de Batatas (1885), Noite Estrelada (1889) e Girassóis (1888). Seu estilo é
+                    caracterizado por pinceladas marcantes e um uso emocional da cor, que trouxe uma visão única e
+                    influente ao mundo da arte.
+            </div>
+            <div class="turma-image">
+                <img src="./img/turma.jpeg" alt="" />
+            </div>
+        </div>
+    </section>
+
     <footer class="rodape">
         <div class="container">
             <img src="./img/logo.png" alt="" class="rodape__logo">
@@ -278,30 +300,30 @@
         const menuBtn = document.querySelector('.menu-btn');
         const navList = document.querySelector('.nav-list');
         const menuLinks = document.querySelectorAll('.nav-list li a'); // Seleciona os links do menu
-    
+
         // Função para abrir e fechar o menu ao clicar no botão do menu
         menuBtn.addEventListener('click', () => {
             navList.classList.toggle('active');
         });
-    
+
         // Fecha o menu ao clicar fora dele
         document.addEventListener('click', (event) => {
             const isClickInside = navList.contains(event.target) || menuBtn.contains(event.target);
-    
+
             if (!isClickInside) {
                 navList.classList.remove('active');
             }
         });
-    
+
         // Fecha o menu ao clicar em qualquer item do menu
         menuLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navList.classList.remove('active');
             });
         });
-    
+
     </script>
-    
+
 </body>
 
 </html>

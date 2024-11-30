@@ -42,7 +42,8 @@ CSS3
 JavaScript
 
 👩‍🏫 Agradecimentos
-Este projeto é dedicado aos alunos do 5º ano e á professora que inspirou sua criação. Vocês são a verdadeira razão deste trabalho existir. Obrigada por acreditarem no poder da união entre Educação e Tecnologia.
+
+Este projeto é dedicado aos alunos do 4º ano e á professora que inspirou sua criação. Vocês são a verdadeira razão deste trabalho existir. Obrigada por acreditarem no poder da união entre Educação e Tecnologia.
 
 Link para acessar o Painel Web: https://projetovangogh.netlify.app/
 

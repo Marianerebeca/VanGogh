@@ -1,6 +1,6 @@
 🎨 Explorando Vincent van Gogh: Arte, Vida e Inspiração 🌻
 
-Bem-vindo ao Portal Interativo, um projeto que mergulha na vida, na obra e no legado de um dos artistas mais icônicos da história! Este painel web foi desenvolvido para estudantes do 5º ano, proporcionando uma experiência educativa, 
+Bem-vindo ao Portal Interativo, um projeto que mergulha na vida, na obra e no legado de um dos artistas mais icônicos da história! Este painel web foi desenvolvido para estudantes do 4º ano, proporcionando uma experiência educativa, 
 envolvente e visualmente rica sobre a jornada fascinante de Van Gogh.
 
 ✨ Sobre o Projeto
